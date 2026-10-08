@@ -87,7 +87,7 @@ export default function GetInTouch() {
           </button>
 
           <a
-            href="https://github.com"
+            href="https://github.com/jamespa001"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 font-semibold px-8 py-3.5 rounded-xl transition-all flex items-center gap-2 cursor-pointer"
