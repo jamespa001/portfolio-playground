@@ -46,12 +46,12 @@ export const projectsData: Project[] = [
         desc: 'Tailored skincare insights and dynamic recommendation dashboard.',
       },
       {
-        image: '/images/projects/skinstric/skinstric-Analysis.png',
+        image: '/images/projects/skinstric/skinstric-analysis.png',
         label: '06 / Deep Skin Analysis',
         desc: 'Detailed biometric breakdown of skin condition parameters and diagnostic metrics.',
       },
       {
-        image: '/images/projects/skinstric/skinstric-Summary.png',
+        image: '/images/projects/skinstric/skinstric-summary.png',
         label: '07 / Custom Regimen Summary',
         desc: 'Comprehensive overview of the personalized skincare routine and recommended active formulations.',
       },
