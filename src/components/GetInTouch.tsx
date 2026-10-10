@@ -59,9 +59,8 @@ export default function GetInTouch() {
           Let&apos;s Build Something Amazing Together
         </h2>
         <p className="text-slate-400 text-lg">
-          I&apos;m currently open to frontend / fullstack developer
-          opportunities, collaborative projects, and technical discussions.
-          Let&apos;s connect!
+          I&apos;m currently open to frontend developer opportunities,
+          collaborative projects, and technical discussions. Let&apos;s connect!
         </p>
 
         {/* Action Buttons */}

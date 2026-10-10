@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { projectsData } from '@/data/projects';
 import PreviewRotator from './PreviewRotator';
 import { useModal } from '@/context/ModalContext';
+import ProjectNavStrip from './ProjectNavStrip';
 import {
   NextJsIcon,
   ReactIcon,
@@ -71,6 +72,9 @@ export default function ProjectGrid() {
         </p>
       </div>
 
+      {/* Quick-Jump Navigation Strip */}
+      <ProjectNavStrip projects={projectsData} />
+
       {/* Stacked Cinematic Flagship Rows */}
       <div className="space-y-16">
         {projectsData.map((project, index) => {
@@ -83,6 +87,7 @@ export default function ProjectGrid() {
           return (
             <div
               key={project.id}
+              id={project.id}
               onMouseEnter={() => setHoveredProjectId(project.id)}
               onMouseLeave={() => setHoveredProjectId(null)}
               className="bg-slate-900/90 rounded-[20px] overflow-hidden p-8 lg:p-12 border-[3px] border-[rgba(249,249,249,0.1)] shadow-[0_26px_30px_-10px_rgba(0,0,0,0.69)] transition-all duration-[250ms] [transition-timing-function:cubic-bezier(0.25,0.46,0.45,0.94)] relative group hover:border-[rgba(249,249,249,0.4)] hover:shadow-[0_40px_50px_-12px_rgba(0,0,0,0.85)] hover:-translate-y-0 hover:scale-[1.0] backdrop-blur-xl"
@@ -120,7 +125,7 @@ export default function ProjectGrid() {
                       return (
                         <div
                           key={idx}
-                          className="flex flex-col items-center justify-between p-2 hover:border-indigo-500/40 transition-all group/tech"
+                          className="flex flex-col items-center p-2 hover:border-indigo-500/40 transition-all group/tech"
                         >
                           {IconComponent ? (
                             <div className="relative overflow-hidden p-1.5 bg-slate-900/80 border border-slate-800/80 rounded-lg group-hover/tech:scale-105 transition-all">
@@ -131,7 +136,7 @@ export default function ProjectGrid() {
                               {tech.charAt(0)}
                             </div>
                           )}
-                          <span className="text-[10px] font-semibold text-slate-300 tracking-tight mt-1.5 text-center line-clamp-1">
+                          <span className="text-[10px] font-semibold text-slate-300 tracking-tight mt-1.5 text-center leading-tight">
                             {tech}
                           </span>
                         </div>
@@ -202,10 +207,6 @@ export default function ProjectGrid() {
                         {activeView?.label}
                       </span>
                     </div>
-
-                    <span className="text-sm text-slate-400 truncate font-medium hidden sm:inline-block">
-                      {activeView?.desc}
-                    </span>
                   </div>
 
                   {/* Preview Block Frame */}

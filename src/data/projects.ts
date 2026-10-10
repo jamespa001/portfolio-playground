@@ -33,7 +33,7 @@ export const projectsData: Project[] = [
       {
         image: '/images/projects/skinstric/skinstric-form.city.png',
         label: '03 / Diagnostic Multi-Step Form',
-        desc: 'Complex multi-phase form state management for personalized skin analysis.',
+        desc: 'Location input step capturing regional environmental skin factors.',
       },
       {
         image: '/images/projects/skinstric/skinstric-results.png',
@@ -43,7 +43,7 @@ export const projectsData: Project[] = [
       {
         image: '/images/projects/skinstric/skinstric-results.camera.png',
         label: '05 / AI Consultation Results Using Camera',
-        desc: 'Tailored skincare insights and dynamic recommendation dashboard.',
+        desc: 'Live camera integration prompt for biometric facial skin scanning.',
       },
       {
         image: '/images/projects/skinstric/skinstric-analysis.png',
@@ -57,13 +57,13 @@ export const projectsData: Project[] = [
       },
       {
         image: '/images/projects/skinstric/skinstric-home.responsive.png',
-        label: '08 / Responsive Design',
-        desc: 'Adaptive layout ensuring optimal viewing experience across various device sizes.',
+        label: '08 / Mobile Landing View',
+        desc: 'Mobile-optimized landing page rendering custom SVG graphics on smaller screens.',
       },
       {
         image: '/images/projects/skinstric/skinstric-results.responsive.png',
-        label: '09 / Responsive Design',
-        desc: 'Adaptive layout ensuring optimal viewing experience across various device sizes.',
+        label: '09 / Mobile Results View',
+        desc: 'Compact mobile viewport layout for the AI skincare consultation dashboard.',
       },
     ],
     featured: true,
@@ -91,12 +91,12 @@ export const projectsData: Project[] = [
       {
         image: '/images/projects/ticketmaster/ticketmaster-home.dark.png',
         label: '01 / Event Discovery & Search (dark)',
-        desc: 'Real-time event catalog powered by the Ticketmaster Discovery API.',
+        desc: 'Real-time event catalog powered by the Ticketmaster Discovery API in dark mode.',
       },
       {
         image: '/images/projects/ticketmaster/ticketmaster-home.light.png',
         label: '02 / Event Discovery & Search (light)',
-        desc: 'Real-time event catalog powered by the Ticketmaster Discovery API.',
+        desc: 'Clean light mode theme displaying trending concerts and sports events.',
       },
       {
         image: '/images/projects/ticketmaster/ticketmaster-events.png',
@@ -127,24 +127,24 @@ export const projectsData: Project[] = [
         image:
           '/images/projects/ticketmaster/ticketmaster-confirmation.light.png',
         label: '08 / Order Confirmation (light)',
-        desc: 'Post-purchase confirmation screen displaying order summary, receipt, and ticket details.',
+        desc: 'Light theme receipt view confirming digital ticket delivery and secure token generation.',
       },
       {
         image: '/images/projects/ticketmaster/ticketmaster-profile.png',
         label: '09 / User Dashboard & Profile',
-        desc: 'Personalized user account management tracking past bookings, saved favorites, and authentication state.',
+        desc: 'Personalized user account management tracking past bookings and saved favorites.',
       },
       {
         image:
           '/images/projects/ticketmaster/ticketmaster-home.dark.responsive.png',
-        label: '10 / Responsive Design',
-        desc: 'Adaptive layout ensuring optimal viewing experience across various device sizes.',
+        label: '10 / Mobile Event Catalog',
+        desc: 'Stacked mobile-responsive event discovery feed optimized for touchscreens.',
       },
       {
         image:
           '/images/projects/ticketmaster/ticketmaster-confirmation.responsive.png',
-        label: '11 / Responsive Design',
-        desc: 'Adaptive layout ensuring optimal viewing experience across various device sizes.',
+        label: '11 / Mobile Ticket Pass',
+        desc: 'Mobile confirmation ticket card layout with scannable digital barcode view.',
       },
     ],
     featured: true,
@@ -165,27 +165,27 @@ export const projectsData: Project[] = [
       {
         image: '/images/projects/movie/movie-home.png',
         label: '01 / Discover & Browse',
-        desc: 'Browse trending titles & responsive carousels.',
+        desc: 'Browse trending titles and featured cinematic recommendations.',
       },
       {
         image: '/images/projects/movie/movie-search.rating.png',
         label: '02 / Search & Filter (Rating)',
-        desc: 'Dynamic filtering via OMDb API and Redux Toolkit.',
+        desc: 'Dynamic filtering by IMDb score via OMDb API and Redux Toolkit state.',
       },
       {
         image: '/images/projects/movie/movie-search.genre.png',
         label: '03 / Search & Filter (Genre)',
-        desc: 'Dynamic filtering via OMDb API and Redux Toolkit.',
+        desc: 'Category filtering to explore action, drama, sci-fi, and comedy titles.',
       },
       {
         image: '/images/projects/movie/movie-search.year.png',
         label: '04 / Search & Filter (Year)',
-        desc: 'Dynamic filtering via OMDb API and Redux Toolkit.',
+        desc: 'Release year sorting and chronological movie catalog exploration.',
       },
       {
         image: '/images/projects/movie/movie-detail.png',
         label: '05 / Detail View',
-        desc: 'Comprehensive movie metadata and state tracking.',
+        desc: 'Comprehensive movie metadata, cast overview, and state tracking.',
       },
       {
         image: '/images/projects/movie/movie-memberexclusive.png',
@@ -194,23 +194,23 @@ export const projectsData: Project[] = [
       },
       {
         image: '/images/projects/movie/movie-home.responsive.png',
-        label: '07 / Responsive Design',
-        desc: 'Adaptive layout ensuring optimal viewing experience across various device sizes.',
+        label: '07 / Mobile Movie Grid',
+        desc: 'Stacked mobile-adapted movie card grid scaled smoothly across phone viewports.',
       },
       {
         image: '/images/projects/movie/movie-detail.responsive.png',
-        label: '08 / Responsive Design',
-        desc: 'Adaptive layout ensuring optimal viewing experience across various device sizes.',
+        label: '08 / Mobile Detail View',
+        desc: 'Responsive movie detail page layout formatted for compact mobile screens.',
       },
       {
         image: '/images/projects/movie/movie-memberexclusive.responsive.png',
-        label: '09 / Responsive Design',
-        desc: 'Adaptive layout ensuring optimal viewing experience across various device sizes.',
+        label: '09 / Mobile Member Access',
+        desc: 'Optimized mobile layout for gated member content and media tracks.',
       },
       {
         image: '/images/projects/movie/movie-search.rating.responsive.png',
-        label: '10 / Responsive Design',
-        desc: 'Adaptive layout ensuring optimal viewing experience across various device sizes.',
+        label: '10 / Mobile Filter Panel',
+        desc: 'Collapsed mobile search and filter drawer for streamlined browsing.',
       },
     ],
     featured: true,
@@ -231,12 +231,12 @@ export const projectsData: Project[] = [
       {
         image: '/images/projects/nft/nft-home.png',
         label: '01 / Explore Marketplace',
-        desc: 'Featured digital collectibles with AOS entrance animations.',
+        desc: 'Featured digital collectibles showcased with smooth AOS entrance animations.',
       },
       {
         image: '/images/projects/nft/nft-explore.png',
         label: '02 / Filter & Browse',
-        desc: 'Dynamic category filtering and search capabilities.',
+        desc: 'Dynamic category filtering and search capabilities for digital assets.',
       },
       {
         image: '/images/projects/nft/nft-explore.loadingstate.png',
@@ -246,32 +246,32 @@ export const projectsData: Project[] = [
       {
         image: '/images/projects/nft/nft-detail.png',
         label: '04 / Asset Details',
-        desc: 'Interactive bidding views and item specifications.',
+        desc: 'Interactive bidding views, price history, and item specifications.',
       },
       {
         image: '/images/projects/nft/nft-author.png',
         label: '05 / Creator Profile',
-        desc: 'User profile overview showcasing minted collections.',
+        desc: 'User profile overview showcasing minted collections and creator stats.',
       },
       {
         image: '/images/projects/nft/nft-home.responsive.png',
-        label: '06 / Responsive Design',
-        desc: 'Adaptive layout ensuring optimal viewing experience across various device sizes.',
+        label: '06 / Mobile Marketplace Grid',
+        desc: 'Mobile-adapted marketplace landing grid with fluid collectible card wrapping.',
       },
       {
         image: '/images/projects/nft/nft-author.responsive.png',
-        label: '07 / Responsive Design',
-        desc: 'Adaptive layout ensuring optimal viewing experience across various device sizes.',
+        label: '07 / Mobile Creator Profile',
+        desc: 'Stacked creator profile layout optimized for mobile screens and tablets.',
       },
       {
         image: '/images/projects/nft/nft-detail.responsive.png',
-        label: '08 / Responsive Design',
-        desc: 'Adaptive layout ensuring optimal viewing experience across various device sizes.',
+        label: '08 / Mobile Bidding View',
+        desc: 'Responsive item bidding and specification view formatted for compact viewports.',
       },
       {
         image: '/images/projects/nft/nft-explore.responsive.png',
-        label: '09 / Responsive Design',
-        desc: 'Adaptive layout ensuring optimal viewing experience across various device sizes.',
+        label: '09 / Mobile Catalog Filters',
+        desc: 'Clean mobile filter drawer and asset category navigation layout.',
       },
     ],
     featured: true,
@@ -346,13 +346,13 @@ export const projectsData: Project[] = [
       },
       {
         image: '/images/projects/summarist/summarist-foryou.responsive.png',
-        label: '12 / Responsive Design',
-        desc: 'Adaptive layout ensuring optimal viewing experience across various device sizes.',
+        label: '12 / Mobile Feed View',
+        desc: 'Mobile dashboard recommendation feed optimized for quick reading on the go.',
       },
       {
         image: '/images/projects/summarist/summarist-settings.responsive.png',
-        label: '13 / Responsive Design',
-        desc: 'Adaptive layout ensuring optimal viewing experience across various device sizes.',
+        label: '13 / Mobile Settings View',
+        desc: 'Responsive account settings and user preference view configured for mobile screens.',
       },
     ],
     featured: true,

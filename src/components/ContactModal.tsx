@@ -163,50 +163,33 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                   Here&apos;s a bit about me.
                 </h2>
                 <p className="text-lg sm:text-xl font-bold text-slate-300">
-                  Full-Stack Developer.
+                  Frontend Developer.
                 </p>
                 <div className="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
-                  <p>
-                    I&apos;m a Full-Stak software engineer with years of
-                    software engineering experience working for{' '}
+                  <p className="text-slate-300 text-base leading-relaxed mb-4">
+                    Building high-performance, accessible, and responsive web
+                    applications with{' '}
                     <strong className="text-indigo-400 font-semibold">
-                      top tech
-                    </strong>{' '}
-                    companies.
-                  </p>
-                  <p>
-                    I&apos;m currently leveraging this experience into
-                    Full-Stack development with{' '}
-                    <strong className="text-indigo-400 font-semibold">
-                      passion
-                    </strong>{' '}
-                    for building{' '}
-                    <strong className="text-indigo-400 font-semibold">
-                      innovative modern web applications
-                    </strong>{' '}
-                    integrated with{' '}
-                    <strong className="text-indigo-400 font-semibold">
-                      AI
-                    </strong>
-                    .
-                  </p>
-                  <p>
-                    Coming from a C# background, I bring strong foundational
-                    engineering principles to modern full-stack web development.
-                    I specialize in building responsive, high-performance
-                    applications using{' '}
-                    <strong className="text-indigo-400 font-semibold">
-                      React, Next.js, TypeScript, Node.js, Tailwind CSS and
-                      PostgreSQL
+                      React, Next.js, TypeScript
                     </strong>
                     .
                   </p>
                 </div>
-
+                <p className="text-slate-300 text-base leading-relaxed mb-4">
+                  I leverage my software engineering background to write{' '}
+                  <strong className="text-indigo-400 font-semibold">
+                    clean, maintainable code
+                  </strong>{' '}
+                  and{' '}
+                  <strong className="text-indigo-400 font-semibold">
+                    deliver polished client-side experiences
+                  </strong>
+                  .
+                </p>
                 {/* Resume Button */}
                 <div className="pt-2">
                   <a
-                    href="/james.park.resume.2026.pdf"
+                    href="/James-Park-Frontend-Developer-Resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center space-x-2 px-4 py-2.5 bg-indigo-600 hover:bg-indigo-500 border border-slate-800 rounded-xl text-xs font-semibold text-slate-200 hover:text-white transition-all shadow-sm group"
@@ -252,8 +235,8 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                     Let&apos;s have a chat!
                   </h3>
                   <p className="text-slate-600 text-base sm:text-lg">
-                    I&apos;m currently open to frontend / full-stack developer
-                    opportunities. Let&apos;s connect!
+                    I&apos;m currently open to frontend developer opportunities.
+                    Let&apos;s connect!
                   </p>
                 </div>
 

@@ -51,32 +51,17 @@ export default function PreviewRotator({
       </a>
 
       {/* Footer Info Bar */}
-      {/* Footer Info Bar */}
-      <div className="bg-slate-950 p-4 border-t border-slate-900 flex items-center justify-between shrink-0 relative z-10">
-        <span className="text-xs text-slate-400 font-mono flex items-center gap-1.5">
+      <div className="bg-slate-950 px-4 py-3 border-t border-slate-900 flex items-center justify-between shrink-0 relative z-10 gap-3">
+        {/* Feature description aligned to top with fixed min-height to prevent jitter */}
+        <p className="text-xs text-slate-300 font-medium flex-1 leading-relaxed min-h-[2.5rem] flex items-start pt-0.5">
+          {currentView?.desc}
+        </p>
+
+        {/* Sleek speed badge on the right */}
+        <div className="flex items-center gap-1.5 text-[11px] text-slate-400 font-mono bg-slate-900/80 px-2.5 py-1 rounded-md border border-slate-800 shrink-0">
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span>
-            Live Rotator Active ({rotationSpeed}{' '}
-            {rotationSpeed === '4x' ? (
-              <svg
-                className="w-3.5 h-3.5 text-indigo-400 fill-current inline -mr-0.5"
-                viewBox="0 0 24 24"
-              >
-                {/* Double fast-forward */}
-                <path d="M2 5l9 7-9 7V5zm10 0l9 7-9 7V5z" />
-              </svg>
-            ) : (
-              <svg
-                className="w-3.5 h-3.5 text-indigo-400 fill-current inline -mr-1.5"
-                viewBox="0 0 24 24"
-              >
-                {/* Single play triangle with negative right margin to swallow the gap */}
-                <path d="M5 4l10 8-10 8V4z" />
-              </svg>
-            )}
-            )
-          </span>
-        </span>
+          <span>Speed ({rotationSpeed})</span>
+        </div>
       </div>
     </div>
   );

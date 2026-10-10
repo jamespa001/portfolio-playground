@@ -1,17 +1,13 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { ArrowUp } from 'lucide-react';
-import { useModal } from '@/context/ModalContext';
+import React, { useState, useEffect } from 'react';
 
-export default function BackToTop() {
+export default function BackToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
-  const { resetGetInTouchFocus } = useModal();
 
   useEffect(() => {
     const toggleVisibility = () => {
-      // Show button after scrolling down 300px
-      if (window.scrollY > 300) {
+      if (window.pageYOffset > 300) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -23,23 +19,28 @@ export default function BackToTop() {
   }, []);
 
   const scrollToTop = () => {
-    resetGetInTouchFocus(); // Reset centered focus state if active
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
     });
-    window.history.pushState(null, '', window.location.pathname);
   };
 
-  if (!isVisible) return null;
+  if (!isVisible) {
+    return null;
+  }
 
   return (
     <button
       onClick={scrollToTop}
       aria-label="Back to top"
-      className="fixed bottom-6 right-6 z-50 p-3 bg-slate-900/90 hover:bg-indigo-600 text-slate-300 hover:text-white border border-slate-800 hover:border-indigo-500 rounded-2xl shadow-2xl transition-all duration-300 backdrop-blur-md cursor-pointer group"
+      className="fixed bottom-20 right-6 z-50 w-10 h-10 bg-slate-900/95 hover:bg-indigo-600 text-slate-300 hover:text-white rounded-sm border border-slate-800 hover:border-indigo-500 shadow-2xl backdrop-blur-md transition-all duration-300 group cursor-pointer flex items-center justify-center rotate-45"
     >
-      <ArrowUp className="w-5 h-5 transition-transform group-hover:-translate-y-0.5" />
+      {/* Rotated Top Button */}
+      <span className="flex items-center justify-center">
+        <span className="text-[10px] font-mono font-semibold tracking-wider uppercase -rotate-45">
+          Top
+        </span>
+      </span>
     </button>
   );
 }

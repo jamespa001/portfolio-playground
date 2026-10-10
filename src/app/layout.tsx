@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'James Park | Frontend Developer Portfolio',
+  title: 'James Park | Junior Frontend Developer | React, Next.js, TypeScript',
   description:
-    'Personal frontend portfolio hub showcasing React, TypeScript, Next.js, and web projects.',
+    'Portfolio of James Park, a Junior Frontend Developer specializing in modern React, Next.js, TypeScript, and Tailwind CSS UI engineering.',
 };
 
 export default function RootLayout({

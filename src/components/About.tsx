@@ -8,36 +8,42 @@ export default function About() {
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
-          <span className="text-xs font-semibold uppercase tracking-widest text-indigo-400 mb-2 block">
+          <span className="text-xs font-semibold uppercase tracking-widest text-indigo-400 mb-3 block">
             Background & Expertise
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-6">
-            Bridging robust backend logic with modern frontend craftsmanship.
+          <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-6">
+            <strong className="text-indigo-400">I&apos;m James</strong>
+            <br />
+            <span className="text-3xl sm:text-4xl">Frontend Developer</span>
           </h2>
           <p className="text-slate-300 text-base leading-relaxed mb-4">
             Coming from a C# background, I bring strong foundational engineering
-            principles to full-stack web development. I specialize in building
+            principles to frontend web development. I specialize in building
             scalable, high-performance applications using{' '}
             <strong className="text-indigo-400 font-semibold">
-              React, Next.js, TypeScript, Node.js, Express and PostgreSQL
+              React, Next.js, TypeScript, Node.js, Tailwind CSS, Express and
+              PostgreSQL
             </strong>
             .
           </p>
           <p className="text-slate-400 text-base leading-relaxed mb-6">
-            Whether architecting RESTful APIs with Express and custom
-            middleware, managing relational database transactions, or crafting
-            polished user interfaces with Redux Toolkit and Tailwind CSS, I
-            focus on clean code, robust system architecture, and exceptional
-            user experience.
+            Whether translating complex business requirements into pixel-perfect
+            UI, managing client-side state, or integrating RESTful APIs with
+            custom hooks and middleware, I focus on{' '}
+            <strong className="text-indigo-400 font-semibold">
+              clean code, robust component architecture, and exceptional user
+              experience
+            </strong>
+            .
           </p>
 
           <div className="grid grid-cols-2 gap-4 text-sm font-medium">
             <div className="bg-slate-900/60 border border-slate-800 p-4 rounded-xl">
               <span className="block text-indigo-400 font-bold text-lg mb-1">
-                Full-Stack Core
+                Frontend Core
               </span>
               <span className="text-slate-300">
-                React, Next.js, Node.js, Express, TypeScript
+                React, Next.js, TypeScript, Tailwind CSS, Redux Toolkit
               </span>
             </div>
             <div className="bg-slate-900/60 border border-slate-800 p-4 rounded-xl">
@@ -53,7 +59,7 @@ export default function About() {
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center gap-4 pt-4">
             <a
-              href="/james.park.resume.2026.pdf"
+              href="/James-Park-Frontend-Developer-Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2.5 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold rounded-xl transition-all shadow-lg shadow-indigo-600/30 group"
@@ -87,14 +93,14 @@ export default function About() {
             <p className="pl-4">
               role:{' '}
               <span className="text-emerald-400">
-                &quot;Full-Stack Developer&quot;
+                &quot;Frontend Developer&quot;
               </span>
               ,
             </p>
             <p className="pl-4">
               focus:{' '}
               <span className="text-emerald-400">
-                &quot;Full-Stack Web Architecture&quot;
+                &quot;UI/UX & System Architecture&quot;
               </span>
               ,
             </p>
@@ -112,7 +118,7 @@ export default function About() {
             <p className="pl-4">
               status:{' '}
               <span className="text-emerald-400">
-                &quot;Building scalable full-stack apps&quot;
+                &quot;Building scalable frontend apps&quot;
               </span>
             </p>
             <p>&#125;;</p>
