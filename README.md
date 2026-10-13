@@ -31,6 +31,7 @@ First, clone the repository and install dependencies:
 git clone [https://github.com/your-username/portfolio-playground.git](https://github.com/your-username/portfolio-playground.git)
 cd portfolio-playground
 npm install
+```
 
 ### 🚀 Core Web Vitals & Performance Optimization
 
