@@ -3,6 +3,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { ProjectView } from '@/types/project';
+import Image from 'next/image';
 
 interface PreviewRotatorProps {
   liveUrl?: string;
@@ -40,11 +41,16 @@ export default function PreviewRotator({
         className="flex-1 relative overflow-hidden flex items-center justify-center cursor-pointer block"
       >
         {/* Actual Image Element inside the Link for bulletproof clickability */}
-        <img
-          src={currentView?.image}
-          alt={currentView?.label || 'Project preview'}
-          className="absolute inset-0 w-full h-full object-contain object-top transition-all duration-1000 transform scale-105 group-hover:scale-100"
-        />
+        <div className="absolute inset-0 w-full h-full">
+          <Image
+            src={currentView?.image}
+            alt={currentView?.label || 'Project preview'}
+            fill
+            sizes="(max-width: 768px) 100vw, 800px"
+            className="object-contain object-top transition-all duration-1000 transform scale-105 group-hover:scale-100"
+            priority={true} // Since this is a prominent feature preview on load
+          />
+        </div>
 
         {/* Subtle dark tint overlay for contrast */}
         <div className="absolute inset-0 bg-slate-950/10 pointer-events-none"></div>
