@@ -146,6 +146,18 @@ export const projectsData: Project[] = [
         label: '11 / Mobile Ticket Pass',
         desc: 'Mobile confirmation ticket card layout with scannable digital barcode view.',
       },
+      {
+        image:
+          '/images/projects/ticketmaster/ticketmaster-admin.testmatrix.1.png',
+        label: '12 / Test Suite & Quality Matrix (Part 1)',
+        desc: 'Comprehensive Vitest integration and unit test suite verifying robust event search and ticket filtering logic.',
+      },
+      {
+        image:
+          '/images/projects/ticketmaster/ticketmaster-admin.testmatrix.2.png',
+        label: '13 / Test Suite & Quality Matrix (Part 2)',
+        desc: 'Execution results demonstrating full test coverage across application checkout flows and state management.',
+      },
     ],
     featured: true,
   },
