@@ -1,3 +1,5 @@
+![Playground CI](https://github.com/jamespa001/playground/actions/workflows/ci.yml/badge.svg)
+
 # 🚀 Personal Portfolio & Engineering Playground Hub
 
 A high-performance, modern developer portfolio and multi-project showcase hub engineered with **Next.js App Router**, **TypeScript**, and **Tailwind CSS**. Designed to highlight production-grade web applications, interactive UI components, and verified Core Web Vitals optimization.
@@ -37,15 +39,19 @@ npm install
 
 By auditing our Vercel production edge deployment, identifying a legacy `<img>` tag within the project preview rotator (`previewrotator.tsx`), and refactoring it to Next.js's optimized `<Image />` component with proper sizing and priority delivery, we successfully improved our core web metrics.
 
-| Metric | Before Optimization (Vercel) | After Optimization (Vercel) | Improvement |
-| :--- | :--- | :--- | :--- |
-| **Lighthouse Score** | **94**[cite: 6] | **96**[cite: 6] | **+2 Points** 🚀 |
-| **Largest Contentful Paint (LCP)** | **1.2 s**[cite: 6] | **0.5 s**[cite: 6] | **2.4x Faster** ⚡ |
-| **Cumulative Layout Shift (CLS)** | **0**[cite: 6] | **0**[cite: 6] | **Perfect Stability** ✨ |
+| Metric                             | Before Optimization (Vercel) | After Optimization (Vercel) | Improvement              |
+| :--------------------------------- | :--------------------------- | :-------------------------- | :----------------------- |
+| **Lighthouse Score**               | **94**[cite: 6]              | **96**[cite: 6]             | **+2 Points** 🚀         |
+| **Largest Contentful Paint (LCP)** | **1.2 s**[cite: 6]           | **0.5 s**[cite: 6]          | **2.4x Faster** ⚡       |
+| **Cumulative Layout Shift (CLS)**  | **0**[cite: 6]               | **0**[cite: 6]              | **Perfect Stability** ✨ |
 
 #### Performance Audits (Vercel Deployment)
-* **Before Optimization (Score: 94):**
+
+- **Before Optimization (Score: 94):**
   ![Performance Portfolio Before](./public/screenshots/Performance.Portfolio.vercel.before.png)
-* **After Optimization (Score: 96):**
+- **After Optimization (Score: 96):**
   ![Performance Portfolio After](./public/screenshots/Performance.Portfolio.vercel.after.png)
+
+```
+
 ```
