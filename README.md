@@ -1,4 +1,4 @@
-![Playground CI](https://github.com/jamespa001/playground/actions/workflows/ci.yml/badge.svg)
+![Playground CI](https://github.com/jamespa001/portfolio-playground/actions/workflows/ci.yml/badge.svg)
 
 # 🚀 Personal Portfolio & Engineering Playground Hub
 
