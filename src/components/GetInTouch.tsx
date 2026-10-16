@@ -64,16 +64,19 @@ export default function GetInTouch() {
         </p>
 
         {/* Action Buttons */}
+        {/* Action Buttons */}
         <div className="flex flex-wrap items-center justify-center gap-4 pt-6">
+          {/* Primary Contact Button */}
           <button
             onClick={openContactModal}
-            className="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-lg shadow-indigo-600/30 flex items-center gap-2 cursor-pointer"
+            className="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-lg shadow-indigo-600/30 flex items-center gap-2 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
           >
             <svg
               className="w-5 h-5"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
+              aria-hidden="true"
             >
               <path
                 strokeLinecap="round"
@@ -85,13 +88,19 @@ export default function GetInTouch() {
             <span>Contact</span>
           </button>
 
+          {/* GitHub Profile Link */}
           <a
             href="https://github.com/jamespa001"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 font-semibold px-8 py-3.5 rounded-xl transition-all flex items-center gap-2 cursor-pointer"
+            aria-label="GitHub Profile (opens in a new tab)"
+            className="bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-semibold px-8 py-3.5 rounded-xl transition-all flex items-center gap-2 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
           >
-            <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <svg
+              className="w-5 h-5 fill-current"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
               <path
                 fillRule="evenodd"
                 clipRule="evenodd"
@@ -99,6 +108,24 @@ export default function GetInTouch() {
               />
             </svg>
             <span>GitHub Profile</span>
+          </a>
+
+          {/* LinkedIn Profile Link */}
+          <a
+            href="https://www.linkedin.com/in/james-park-14478927a/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn Profile (opens in a new tab)"
+            className="bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-semibold px-8 py-3.5 rounded-xl transition-all flex items-center gap-2 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+          >
+            <svg
+              className="w-5 h-5 fill-current"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+            </svg>
+            <span>LinkedIn Profile</span>
           </a>
         </div>
       </div>
